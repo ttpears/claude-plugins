@@ -4,7 +4,7 @@
     "name": "Tim Pearson"
   },
   "metadata": {
-    "description": "MCP servers published by ttpears: GitLab, BookStack, and MySQL."
+    "description": "MCP servers published by ttpears: GitLab, BookStack, MySQL, and MediaWiki."
   },
   "plugins": [
     {
@@ -28,10 +28,20 @@
       "tags": ["bookstack", "wiki", "documentation"]
     },
     {
-      "name": "mcp-mysql",
+      "name": "mediawiki-mcp",
       "source": {
         "source": "github",
-        "repo": "ttpears/mcp-mysql"
+        "repo": "ttpears/mediawiki-mcp"
+      },
+      "description": "MediaWiki MCP server with multi-wiki support and REST API",
+      "category": "knowledge",
+      "tags": ["mediawiki", "wiki"]
+    },
+    {
+      "name": "mysql-mcp",
+      "source": {
+        "source": "github",
+        "repo": "ttpears/mysql-mcp"
       },
       "description": "MySQL MCP server with analytics and user behavior analysis",
       "category": "database",
