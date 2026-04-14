@@ -1,0 +1,41 @@
+{
+  "name": "ttpears",
+  "owner": {
+    "name": "Tim Pearson"
+  },
+  "metadata": {
+    "description": "MCP servers published by ttpears: GitLab, BookStack, and MySQL."
+  },
+  "plugins": [
+    {
+      "name": "gitlab-mcp",
+      "source": {
+        "source": "github",
+        "repo": "ttpears/gitlab-mcp"
+      },
+      "description": "GitLab MCP server with GraphQL discovery and team activity tools",
+      "category": "devtools",
+      "tags": ["gitlab", "graphql", "git"]
+    },
+    {
+      "name": "bookstack-mcp",
+      "source": {
+        "source": "github",
+        "repo": "ttpears/bookstack-mcp"
+      },
+      "description": "BookStack wiki MCP server — search, read, create, and manage documentation",
+      "category": "knowledge",
+      "tags": ["bookstack", "wiki", "documentation"]
+    },
+    {
+      "name": "mcp-mysql",
+      "source": {
+        "source": "github",
+        "repo": "ttpears/mcp-mysql"
+      },
+      "description": "MySQL MCP server with analytics and user behavior analysis",
+      "category": "database",
+      "tags": ["mysql", "sql", "analytics"]
+    }
+  ]
+}
