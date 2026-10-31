@@ -40,7 +40,7 @@
       "source": {
         "source": "github",
         "repo": "ttpears/bookstack-mcp",
-        "sha": "2c57a03c299d2482209e8578c18609fa76cb80f8"
+        "sha": "e662ee4fabf84dfc4f18b0a0cdf3ab4cd4920c2f"
       },
       "description": "BookStack wiki MCP server — search, read, create, and manage documentation",
       "category": "knowledge",

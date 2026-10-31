@@ -2,15 +2,15 @@
 
 [Home](../README.md) · [Configuration](configuration.md) · [Operations](operations.md)
 
-Use a direct registration when you want an exact npm package version, per-server
-environment settings, or a team `.mcp.json`. A direct server is managed with
+Use a direct registration when you want to choose an npm package version,
+per-server environment settings, or a team `.mcp.json`. A direct server is managed with
 `claude mcp`; a marketplace plugin is managed with `claude plugin`.
 
 ## Choose one route for each connection
 
 | Route | Configuration owner | Version choice |
 | --- | --- | --- |
-| Marketplace plugin | The upstream plugin manifest | Catalog pins the manifest; its npm command remains unversioned. |
+| Marketplace plugin | The upstream plugin manifest | Catalog pins the manifest; BookStack also pins its npm runtime to 5.7.1. |
 | Direct MCP registration | You, through `claude mcp add` or `.mcp.json` | You choose the package version in the command. |
 
 Before switching an existing connection, [disable its plugin](operations.md#disable-or-remove-a-plugin)

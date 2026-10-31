@@ -12,7 +12,7 @@ Connect Claude Code to **GitLab, BookStack, and MediaWiki** through one plugin m
 | **BookStack MCP** | Search and read documentation; enable write tools when you need to create or maintain content. | [BookStack](docs/plugins/bookstack.md) |
 | **MediaWiki MCP** | Search and read one or several wikis; edit content using bot credentials. | [MediaWiki](docs/plugins/mediawiki.md) |
 
-This repository distributes the **catalog**, not the server implementations. Each plugin comes from its upstream GitHub repository and launches an npm package on your machine. The catalog's source commits are pinned; the upstream npm launch commands are unversioned. See [what is versioned](docs/operations.md#understand-the-three-layers-of-versioning) before choosing an installation route.
+This repository distributes the **catalog**, not the server implementations. Each plugin comes from its upstream GitHub repository and launches an npm package on your machine. The catalog's source commits are pinned, and BookStack also pins its exact npm runtime. GitLab and MediaWiki currently use unversioned npm launch commands. See [what is versioned](docs/operations.md#understand-the-three-layers-of-versioning) before choosing an installation route.
 
 ## Quick start: BookStack
 
@@ -68,7 +68,7 @@ An enabled plugin confirms installation; a successful search confirms that the s
 
 ## Catalog snapshot
 
-Verified on **2026-10-31**. These are the manifests selected by the catalog, not a promise that an unversioned npm launch always runs that same package version.
+Verified on **2026-10-31**. These are the manifests selected by the catalog. BookStack launches the exact package version shown; GitLab and MediaWiki's unversioned npm commands can resolve a different runtime version.
 
 | Install ID | Published package | Manifest | Declared Node.js requirement |
 | --- | --- | --- | --- |
