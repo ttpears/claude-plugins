@@ -1,0 +1,8 @@
+{
+  "env": {
+    "BOOKSTACK_BASE_URL": "https://bookstack.example.com",
+    "BOOKSTACK_TOKEN_ID": "replace-with-token-id",
+    "BOOKSTACK_TOKEN_SECRET": "replace-with-token-secret",
+    "BOOKSTACK_ENABLE_WRITE": "false"
+  }
+}

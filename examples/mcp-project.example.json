@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "bookstack": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "bookstack-mcp@5.7.1"],
+      "env": {
+        "BOOKSTACK_BASE_URL": "${BOOKSTACK_BASE_URL}",
+        "BOOKSTACK_TOKEN_ID": "${BOOKSTACK_TOKEN_ID}",
+        "BOOKSTACK_TOKEN_SECRET": "${BOOKSTACK_TOKEN_SECRET}",
+        "BOOKSTACK_ENABLE_WRITE": "${BOOKSTACK_ENABLE_WRITE:-false}"
+      }
+    }
+  }
+}
