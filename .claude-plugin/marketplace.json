@@ -1,7 +1,8 @@
 {
   "name": "ttpears",
   "owner": {
-    "name": "Tim Pearson"
+    "name": "Tim Pearson",
+    "url": "https://github.com/ttpears"
   },
   "metadata": {
     "description": "MCP servers published by ttpears: GitLab, BookStack, and MediaWiki."
@@ -11,31 +12,82 @@
       "name": "gitlab-mcp",
       "source": {
         "source": "github",
-        "repo": "ttpears/gitlab-mcp"
+        "repo": "ttpears/gitlab-mcp",
+        "sha": "953fc42617dfafc58a0132a0460a1b7a076cbd66"
       },
       "description": "GitLab MCP server with GraphQL discovery and team activity tools",
       "category": "devtools",
-      "tags": ["gitlab", "graphql", "git"]
+      "tags": [
+        "gitlab",
+        "graphql",
+        "git"
+      ],
+      "displayName": "GitLab MCP",
+      "author": {
+        "name": "Tim Pearson"
+      },
+      "homepage": "https://github.com/ttpears/gitlab-mcp",
+      "repository": "https://github.com/ttpears/gitlab-mcp",
+      "license": "MIT",
+      "keywords": [
+        "mcp",
+        "gitlab",
+        "graphql"
+      ]
     },
     {
       "name": "bookstack-mcp",
       "source": {
         "source": "github",
-        "repo": "ttpears/bookstack-mcp"
+        "repo": "ttpears/bookstack-mcp",
+        "sha": "2c57a03c299d2482209e8578c18609fa76cb80f8"
       },
       "description": "BookStack wiki MCP server — search, read, create, and manage documentation",
       "category": "knowledge",
-      "tags": ["bookstack", "wiki", "documentation"]
+      "tags": [
+        "bookstack",
+        "wiki",
+        "documentation"
+      ],
+      "displayName": "BookStack MCP",
+      "author": {
+        "name": "Tim Pearson"
+      },
+      "homepage": "https://github.com/ttpears/bookstack-mcp",
+      "repository": "https://github.com/ttpears/bookstack-mcp",
+      "license": "MIT",
+      "keywords": [
+        "mcp",
+        "bookstack",
+        "wiki",
+        "documentation"
+      ]
     },
     {
       "name": "mediawiki-mcp",
       "source": {
         "source": "github",
-        "repo": "ttpears/mediawiki-mcp"
+        "repo": "ttpears/mediawiki-mcp",
+        "sha": "7d49e4632df036c1ac53565ef1b78c88e9e64273"
       },
       "description": "MediaWiki MCP server with multi-wiki support and REST API",
       "category": "knowledge",
-      "tags": ["mediawiki", "wiki"]
+      "tags": [
+        "mediawiki",
+        "wiki"
+      ],
+      "displayName": "MediaWiki MCP",
+      "author": {
+        "name": "Tim Pearson"
+      },
+      "homepage": "https://github.com/ttpears/mediawiki-mcp",
+      "repository": "https://github.com/ttpears/mediawiki-mcp",
+      "license": "MIT",
+      "keywords": [
+        "mcp",
+        "mediawiki",
+        "wiki"
+      ]
     }
   ]
 }
