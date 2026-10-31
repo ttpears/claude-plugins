@@ -66,8 +66,10 @@ turn them off again, restore `false` and restart the server through a new sessio
 
 The package declares Node.js **18+**; Node.js 22+ is the common recommendation for
 using this catalog's three servers together. The
-[pinned manifest](https://github.com/ttpears/bookstack-mcp/blob/2c57a03c299d2482209e8578c18609fa76cb80f8/.claude-plugin/plugin.json)
-launches `npx -y bookstack-mcp` directly.
+[pinned manifest](https://github.com/ttpears/bookstack-mcp/blob/e662ee4fabf84dfc4f18b0a0cdf3ab4cd4920c2f/.claude-plugin/plugin.json)
+launches `npx -y bookstack-mcp@5.7.1` directly. Both the GitHub source and npm
+runtime are pinned. This catalog selects the reviewed launcher/asset correction
+for the already published 5.7.1 runtime.
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
@@ -81,7 +83,7 @@ as described in [Troubleshooting](../troubleshooting.md#network-and-certificate-
 The upstream server also has a TLS-verification bypass option; it disables
 certificate checks and should not be the default fix for a connection failure.
 
-Reference: [README at the pinned release](https://github.com/ttpears/bookstack-mcp/blob/2c57a03c299d2482209e8578c18609fa76cb80f8/README.md)
-and [environment example](https://github.com/ttpears/bookstack-mcp/blob/2c57a03c299d2482209e8578c18609fa76cb80f8/.env.example).
+Reference: [README at the pinned source](https://github.com/ttpears/bookstack-mcp/blob/e662ee4fabf84dfc4f18b0a0cdf3ab4cd4920c2f/README.md)
+and [environment example](https://github.com/ttpears/bookstack-mcp/blob/e662ee4fabf84dfc4f18b0a0cdf3ab4cd4920c2f/.env.example).
 The marketplace uses local stdio; upstream HTTP/OAuth instructions describe a
 different deployment.

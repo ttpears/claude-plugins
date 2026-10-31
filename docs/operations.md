@@ -47,15 +47,17 @@ the explicit commands above make both steps visible. See the
 | Plugin manifest | Each entry's `source.sha` in `.claude-plugin/marketplace.json` | Selects the upstream plugin's files, configuration, and declared version. |
 | npm server package | The command and arguments inside that upstream manifest | Selects what server executable is resolved when it starts. |
 
-The catalog pins each upstream repository to a release commit. Its current
-upstream commands still request unversioned packages (`npx -y bookstack-mcp`, for
-example). An immutable source commit therefore does **not** mean the npm runtime
-is fixed to that release. `npx` also handles its own resolution and caching;
-do not assume every restart downloads a new package.
+The catalog pins each upstream repository to a reviewed commit. BookStack's
+selected manifest also pins its npm runtime to `bookstack-mcp@5.7.1`. GitLab and
+MediaWiki's selected manifests still request unversioned npm packages, so their
+source pins alone do not fix the server runtime to that release. `npx` also
+handles its own resolution and caching; do not assume every restart downloads
+a new package.
 
-To require an exact server version, use a [direct registration](direct-install.md)
-with `package@version`. The version table in the README describes the catalog's
-manifest snapshot, not a measurement of a running server's executable.
+For a different exact server version or an upstream manifest that does not pin
+one, use a [direct registration](direct-install.md) with `package@version`. The
+README table describes the catalog's manifest snapshot, not a measurement of a
+running server's executable.
 
 ## Update a direct registration
 
